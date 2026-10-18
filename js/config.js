@@ -6,8 +6,8 @@
     teacherBiography: "",
     teachingApproach: "",
     contactEmail: "devwiyada1@gmail.com",
-    whatsappNumber: "",
-    whatsappEnabled: false,
+    whatsappNumber: "66626958014",
+    whatsappEnabled: true,
     responseTime: "",
     bookingUrl: "",
     socialLinks: Object.freeze({
