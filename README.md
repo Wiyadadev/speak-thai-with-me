@@ -27,11 +27,16 @@ Edit the values in `js/config.js`:
 - `teacherName`: the teacher’s real name, as they want it displayed.
 - `teacherBiography`: a teacher-approved biography; avoid unverified claims.
 - `teachingApproach`: a concise, teacher-approved explanation of how lessons are taught.
-- `contactEmail`: a real teacher email address. Contact links activate and, when no booking URL is set, the booking form prepares an email draft.
+- `contactEmail`: a real teacher email address. It is currently configured as `devwiyada1@gmail.com`. Contact links activate and, when no booking URL is set, the booking form prepares an email draft.
+- `whatsappNumber`: a WhatsApp number in international format (country code plus number; separators are allowed). It becomes an active `wa.me` link only when the number validates and `whatsappEnabled` is `true`.
+- `whatsappEnabled`: set to `true` only after a real WhatsApp number has been configured and verified; it is currently `false`.
+- `responseTime`: optional owner-provided response-time wording. It is shown only when configured.
 - `bookingUrl`: optional real HTTPS/HTTP booking service URL. When configured, visitors use the provider instead of entering details on this site.
 - `socialLinks`: real social profile URLs. Empty values remain hidden.
 
-The email booking form appears only after a valid teacher email is configured. It validates the required student fields and preferred date, then opens a `mailto:` draft. The student must review and send the email; a reservation is not confirmed until the teacher replies. The site does not send requests to a server, claim a booking succeeded, or save student details in LocalStorage. Email applications can impose URL length limits, so this static workflow is best suited to short requests. Until an email address or booking URL is configured, the form stays hidden and the page clearly explains that booking is not available.
+The email booking form appears only after a valid teacher email is configured. It validates the required student fields and preferred date, then prepares a `mailto:` draft. The student must open, review, and send the email; the website does not send it. **Your lesson is not confirmed until Teacher Apple replies.** The site does not send requests to a server, claim a booking succeeded, or save student details in LocalStorage. Email applications can impose URL length limits, so this static workflow is best suited to short requests. Until an email address or booking URL is configured, the form stays hidden and the page clearly explains that booking is not available.
+
+The Contact page activates the configured email link. WhatsApp remains inactive until the owner sets a real international-format number and enables `whatsappEnabled`; no example number is configured by default. Response-time text is not shown unless the owner provides it.
 
 The teacher name, biography, and teaching approach on `about.html` are rendered from `js/config.js`. Replace the photo placeholder on `about.html` with a real teacher photo or remove it before publishing. Do not add unverified qualifications or experience.
 

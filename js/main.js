@@ -61,6 +61,34 @@
     emailStatus.textContent = "Email contact is unavailable because the configured address is invalid.";
   }
 
+  const whatsappStatus = document.querySelector("#whatsapp-status");
+  const whatsappLinks = document.querySelectorAll("[data-whatsapp-contact]");
+  const whatsappNumber = typeof config.whatsappNumber === "string" ? config.whatsappNumber.trim() : "";
+  const whatsappEnabled = config.whatsappEnabled === true;
+  const normalizedWhatsappNumber = whatsappNumber.replace(/[\s()+.-]/g, "");
+  const validWhatsappNumber = /^\d{8,15}$/.test(normalizedWhatsappNumber);
+  if (whatsappEnabled && validWhatsappNumber) {
+    whatsappLinks.forEach((element) => {
+      if (!(element instanceof HTMLAnchorElement)) return;
+      element.href = `https://wa.me/${normalizedWhatsappNumber}`;
+      element.hidden = false;
+    });
+    if (whatsappStatus) whatsappStatus.textContent = "Send a message on WhatsApp.";
+  } else if (whatsappEnabled && whatsappNumber && !validWhatsappNumber && whatsappStatus) {
+    whatsappStatus.textContent = "WhatsApp contact is unavailable because the configured number is invalid.";
+  } else if (whatsappStatus) {
+    whatsappStatus.textContent = whatsappEnabled
+      ? "WhatsApp contact is not available until a valid number is configured."
+      : "WhatsApp contact is not configured yet.";
+  }
+
+  const responseTime = typeof config.responseTime === "string" ? config.responseTime.trim() : "";
+  document.querySelectorAll("[data-response-time]").forEach((element) => {
+    if (!(element instanceof HTMLElement) || !responseTime) return;
+    element.textContent = `Typical response time: ${responseTime}`;
+    element.hidden = false;
+  });
+
   const bookingUrl = typeof config.bookingUrl === "string" ? config.bookingUrl.trim() : "";
   document.querySelectorAll("[data-booking-url]").forEach((element) => {
     if (!(element instanceof HTMLAnchorElement) || !isWebUrl(bookingUrl)) return;
@@ -94,7 +122,12 @@
   const contactIntro = document.querySelector("[data-contact-intro]");
   if (
     contactIntro &&
-    (isValidEmail(email) || isWebUrl(bookingUrl) || (socialContainer instanceof HTMLElement && socialContainer.childElementCount > 0))
+    (
+      isValidEmail(email) ||
+      (whatsappEnabled && validWhatsappNumber) ||
+      isWebUrl(bookingUrl) ||
+      (socialContainer instanceof HTMLElement && socialContainer.childElementCount > 0)
+    )
   ) {
     contactIntro.textContent = "Have a question about learning or private lessons? Use the configured contact options below to get in touch.";
   }

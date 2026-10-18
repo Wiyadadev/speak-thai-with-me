@@ -245,13 +245,15 @@ h3 { font-size: 1.18rem; }
 .about-values { margin-bottom: 85px; padding: 48px; border-radius: 20px; background: #f1eee5; }
 .about-values h2 { margin-bottom: 12px; }
 .about-values > p:not(.eyebrow) { max-width: 600px; color: var(--navy-soft); }
-.contact-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; padding-block: 10px 35px; }
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 235px), 1fr)); gap: 18px; padding-block: 10px 35px; }
 .contact-card { min-height: 260px; padding: 25px; border: 1px solid var(--line); border-radius: 17px; background: var(--paper); }
 .contact-icon { display: grid; width: 44px; height: 44px; margin-bottom: 23px; place-items: center; border-radius: 13px; color: var(--coral-dark); background: #f7d9cd; font-size: 1.2rem; font-weight: 700; }
 .contact-card .eyebrow { margin-bottom: 7px; }
 .contact-card h2 { margin-bottom: 10px; font-size: 1.35rem; }
 .contact-card > p:not(.eyebrow) { min-height: 52px; margin-bottom: 15px; color: var(--muted); font-size: .84rem; }
 .contact-card .text-link { font-size: .82rem; }
+.contact-card .button { margin-top: 2px; }
+.response-time { width: fit-content; margin: -20px 0 0; padding: 7px 12px; border-radius: 999px; color: var(--navy-soft); background: #f2ebdd; font-size: .78rem !important; }
 .social-links { display: flex; flex-wrap: wrap; gap: 10px; }
 .social-links a { color: var(--coral-dark); font-size: .83rem; font-weight: 700; }
 .config-footnote { margin-top: 15px; }

@@ -23,7 +23,7 @@
     link.textContent = "Open the booking service ↗";
     configNotice.append(document.createElement("br"), link);
   } else if (email && validEmail) {
-    configNotice.textContent = "Complete the form to prepare an email draft. You must review and send the email yourself. A reservation is not confirmed until the teacher replies.";
+    configNotice.textContent = "Complete the form to prepare an email draft. You must review and send the email yourself. Your lesson is not confirmed until Teacher Apple replies.";
     const dateInput = form.elements.namedItem("date");
     if (dateInput instanceof HTMLInputElement && dateInput.type === "date") {
       const today = new Date();
@@ -74,7 +74,7 @@
     link.className = "text-link";
     link.textContent = "Open email draft ↗";
     status.replaceChildren(
-      document.createTextNode("Your request is ready as an email draft. Open it, review the details, and press Send yourself. No email has been sent by this website, and your reservation is not confirmed until the teacher replies. "),
+      document.createTextNode("Your request is ready as an email draft. Open it, review the details, and press Send yourself. No email has been sent by this website. Your lesson is not confirmed until Teacher Apple replies. "),
       link
     );
   });
