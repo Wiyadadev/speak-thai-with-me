@@ -1,0 +1,233 @@
+[
+  {
+    "id": "greetings",
+    "title": "Thai Greetings",
+    "description": "Start a conversation with a friendly hello and a polite thank you.",
+    "objectives": [
+      "Recognize and say a common Thai greeting and thank-you phrase.",
+      "Identify a simple yes and no response."
+    ],
+    "vocabulary": [
+      {"thai":"สวัสดี","romanization":"sawatdi","meaning":"hello / goodbye"},
+      {"thai":"ขอบคุณ","romanization":"khopkhun","meaning":"thank you"},
+      {"thai":"ใช่","romanization":"chai","meaning":"yes / that's right"},
+      {"thai":"ไม่ใช่","romanization":"mai chai","meaning":"no / that's not right"}
+    ],
+    "examples": [
+      {"thai":"สวัสดีครับ","romanization":"sawatdi khrap","translation":"Hello (ครับ is a polite particle commonly used by men; usage varies by speaker and context)."},
+      {"thai":"ขอบคุณค่ะ","romanization":"khopkhun kha","translation":"Thank you (ค่ะ is a polite particle commonly used by women in statements; usage varies by speaker and context)."}
+    ],
+    "quiz": [
+      {"question":"What does ขอบคุณ mean?","choices":["Hello","Thank you","Excuse me"],"answer":1,"explanation":"ขอบคุณ (khopkhun) means thank you."},
+      {"question":"Which phrase means hello?","choices":["สวัสดี","ไม่ใช่","ใช่"],"answer":0,"explanation":"สวัสดี (sawatdi) is a common greeting."}
+    ]
+  },
+  {
+    "id": "numbers-prices",
+    "title": "Numbers and Prices",
+    "description": "Recognize a few useful numbers and ask how much something costs.",
+    "objectives": [
+      "Recognize the Thai words for one, two, and three.",
+      "Ask how much an item costs."
+    ],
+    "vocabulary": [
+      {"thai":"หนึ่ง","romanization":"nueng","meaning":"one"},
+      {"thai":"สอง","romanization":"song","meaning":"two"},
+      {"thai":"สาม","romanization":"sam","meaning":"three"},
+      {"thai":"เท่าไหร่","romanization":"thao rai","meaning":"how much?"}
+    ],
+    "examples": [
+      {"thai":"อันนี้เท่าไหร่ครับ","romanization":"an ni thao rai khrap","translation":"How much is this? (ครับ is a polite particle commonly used by men; usage varies by speaker and context)."},
+      {"thai":"สองอัน","romanization":"song an","translation":"Two items. (อัน is a general classifier used for objects without a more specific classifier.)"}
+    ],
+    "quiz": [
+      {"question":"What does สอง mean?","choices":["One","Two","Three"],"answer":1,"explanation":"สอง (song) means two."},
+      {"question":"How do you ask 'How much?'","choices":["เท่าไหร่","สวัสดี","ขอโทษ"],"answer":0,"explanation":"เท่าไหร่ (thao rai) means how much."}
+    ]
+  },
+  {
+    "id": "introducing-yourself",
+    "title": "Introducing Yourself",
+    "description": "Share your name and ask someone else’s in a simple introduction.",
+    "objectives": [
+      "Introduce yourself using a common Thai name pattern.",
+      "Ask another person what their name is."
+    ],
+    "vocabulary": [
+      {"thai":"ชื่อ","romanization":"chue","meaning":"name"},
+      {"thai":"ผม","romanization":"phom","meaning":"I / me (commonly used by men)"},
+      {"thai":"ฉัน","romanization":"chan","meaning":"I / me (often used by women; choice depends on speaker and context)"},
+      {"thai":"คุณ","romanization":"khun","meaning":"you"}
+    ],
+    "examples": [
+      {"thai":"ผมชื่ออเล็กซ์ครับ","romanization":"phom chue Alex khrap","translation":"My name is Alex. (ผม is commonly used by men; ครับ is a polite particle commonly used by men.)"},
+      {"thai":"คุณชื่ออะไร","romanization":"khun chue arai","translation":"What is your name? (A polite particle may be added at the end.)"}
+    ],
+    "quiz": [
+      {"question":"What does ชื่อ mean?","choices":["Name","Friend","Where"],"answer":0,"explanation":"ชื่อ (chue) means name."},
+      {"question":"Which phrase asks 'What is your name?'","choices":["คุณชื่ออะไร","อันนี้เท่าไหร่","ไปไหน"],"answer":0,"explanation":"คุณชื่ออะไร (khun chue arai) asks what your name is."}
+    ]
+  },
+  {
+    "id": "food",
+    "title": "Ordering Food",
+    "description": "Use a few simple phrases to order something delicious.",
+    "objectives": [
+      "Recognize useful words for rice, water, and food taste.",
+      "Ask politely for a glass of water and describe food as delicious."
+    ],
+    "vocabulary": [
+      {"thai":"ข้าว","romanization":"khao","meaning":"rice / meal"},
+      {"thai":"น้ำ","romanization":"nam","meaning":"water"},
+      {"thai":"อร่อย","romanization":"aroi","meaning":"delicious"},
+      {"thai":"ไม่เผ็ด","romanization":"mai phet","meaning":"not spicy"}
+    ],
+    "examples": [
+      {"thai":"ขอน้ำหนึ่งแก้วครับ","romanization":"kho nam nueng kaeo khrap","translation":"May I have a glass of water, please? (ขอ makes a polite request; ครับ is commonly used by men.)"},
+      {"thai":"อร่อยมากค่ะ","romanization":"aroi mak kha","translation":"It’s very delicious. (ค่ะ is commonly used by women in statements.)"}
+    ],
+    "quiz": [
+      {"question":"What does ไม่เผ็ด mean?","choices":["Very spicy","Not spicy","Delicious"],"answer":1,"explanation":"ไม่เผ็ด (mai phet) means not spicy."},
+      {"question":"Which word means water?","choices":["ข้าว","น้ำ","อร่อย"],"answer":1,"explanation":"น้ำ (nam) means water."}
+    ]
+  },
+  {
+    "id": "shopping",
+    "title": "Shopping",
+    "description": "Ask about an item and say whether you would like it.",
+    "objectives": [
+      "Point out an item and say you would like it or do not want it.",
+      "Ask the price using a question form."
+    ],
+    "vocabulary": [
+      {"thai":"อันนี้","romanization":"an ni","meaning":"this one"},
+      {"thai":"เอา","romanization":"ao","meaning":"to want / take"},
+      {"thai":"ไม่เอา","romanization":"mai ao","meaning":"don't want / won't take"},
+      {"thai":"ราคา","romanization":"rakha","meaning":"price"}
+    ],
+    "examples": [
+      {"thai":"เอาอันนี้ครับ","romanization":"ao an ni khrap","translation":"I’ll take this one. (ครับ is commonly used by men as a polite particle.)"},
+      {"thai":"ราคาเท่าไหร่คะ","romanization":"rakha thao rai kha","translation":"How much is it? (คะ is commonly used by women as a question-final polite particle.)"}
+    ],
+    "quiz": [
+      {"question":"What does อันนี้ mean?","choices":["This one","That one","How much"],"answer":0,"explanation":"อันนี้ (an ni) means this one."},
+      {"question":"Which phrase means 'I don't want it'?","choices":["เอา","ไม่เอา","ราคา"],"answer":1,"explanation":"ไม่เอา (mai ao) means don't want it or won't take it."}
+    ]
+  },
+  {
+    "id": "directions",
+    "title": "Asking for Directions",
+    "description": "Ask where a place is and check whether it is nearby.",
+    "objectives": [
+      "Ask where a place is.",
+      "Understand a simple direction to go straight."
+    ],
+    "vocabulary": [
+      {"thai":"ที่ไหน","romanization":"thi nai","meaning":"where?"},
+      {"thai":"ไป","romanization":"pai","meaning":"to go"},
+      {"thai":"ตรงไป","romanization":"trong pai","meaning":"go straight"},
+      {"thai":"ใกล้","romanization":"klai","meaning":"near"}
+    ],
+    "examples": [
+      {"thai":"ห้องน้ำอยู่ที่ไหนครับ","romanization":"hong nam yu thi nai khrap","translation":"Where is the restroom? (ครับ is commonly used by men as a polite particle.)"},
+      {"thai":"ตรงไปครับ","romanization":"trong pai khrap","translation":"Go straight. (ครับ is commonly used by men as a polite particle.)"}
+    ],
+    "quiz": [
+      {"question":"What does ที่ไหน mean?","choices":["How much?","Where?","When?"],"answer":1,"explanation":"ที่ไหน (thi nai) means where."},
+      {"question":"How do you say 'go straight'?","choices":["ตรงไป","ไม่เอา","ขอบคุณ"],"answer":0,"explanation":"ตรงไป (trong pai) means go straight."}
+    ]
+  },
+  {
+    "id": "everyday-expressions",
+    "title": "Everyday Expressions",
+    "description": "Learn friendly expressions for saying sorry and asking someone to wait.",
+    "objectives": [
+      "Recognize common phrases for apologizing and reassuring someone.",
+      "Ask someone to wait briefly in a service or everyday interaction."
+    ],
+    "vocabulary": [
+      {"thai":"ขอโทษ","romanization":"kho thot","meaning":"sorry / excuse me"},
+      {"thai":"ไม่เป็นไร","romanization":"mai pen rai","meaning":"it's okay / no problem"},
+      {"thai":"รอสักครู่","romanization":"ro sak khru","meaning":"please wait a moment (polite / service style)"},
+      {"thai":"ช่วยด้วย","romanization":"chuai duai","meaning":"help! (often urgent; not a neutral polite request)"}
+    ],
+    "examples": [
+      {"thai":"ขอโทษครับ","romanization":"kho thot khrap","translation":"Excuse me / I’m sorry. (ครับ is commonly used by men as a polite particle.)"},
+      {"thai":"ไม่เป็นไรค่ะ","romanization":"mai pen rai kha","translation":"It’s okay / no problem. (ค่ะ is commonly used by women in statements.)"}
+    ],
+    "quiz": [
+      {"question":"What can ไม่เป็นไร mean?","choices":["No problem","Where is it?","Very spicy"],"answer":0,"explanation":"ไม่เป็นไร (mai pen rai) commonly means it's okay or no problem."},
+      {"question":"What does ขอโทษ mean?","choices":["Thank you","Sorry / excuse me","Go straight"],"answer":1,"explanation":"ขอโทษ (kho thot) means sorry or excuse me."}
+    ]
+  },
+  {
+    "id": "politeness",
+    "title": "Thai Politeness",
+    "description": "Get familiar with polite particles and when speakers commonly use them.",
+    "objectives": [
+      "Distinguish the common uses of ครับ, ค่ะ, and คะ.",
+      "Recognize how หน่อย can soften a request."
+    ],
+    "teachingNote": "ครับ is commonly used by men after statements and questions. Among speakers who use the feminine-associated particles, ค่ะ commonly ends statements and คะ commonly ends questions. ค่ะ and คะ have different tones even though this plain romanization writes both as kha. Particle choices vary with the speaker and context; these are common patterns, not rules for every speaker.",
+    "vocabulary": [
+      {"thai":"ครับ","romanization":"khrap","meaning":"polite particle commonly used by men; can mark statements or questions"},
+      {"thai":"ค่ะ","romanization":"kha","meaning":"polite particle commonly used by women in statements"},
+      {"thai":"คะ","romanization":"kha","meaning":"polite particle commonly used by women in questions"},
+      {"thai":"หน่อย","romanization":"noi","meaning":"a little / softener in requests"}
+    ],
+    "examples": [
+      {"thai":"ช่วยหน่อยครับ","romanization":"chuai noi khrap","translation":"Please help me. (หน่อย softens the request; ครับ is commonly used by men.)"},
+      {"thai":"ไปไหมคะ","romanization":"pai mai kha","translation":"Would you like to go? (คะ is commonly used by women at the end of questions.)"}
+    ],
+    "quiz": [
+      {"question":"Which is commonly used as a polite question particle by women?","choices":["ค่ะ","คะ","ครับ"],"answer":1,"explanation":"คะ is commonly used by women at the end of questions; the plain romanization kha does not show its tone."},
+      {"question":"Which polite particle is commonly used by men?","choices":["ครับ","ค่ะ","คะ"],"answer":0,"explanation":"ครับ (khrap) is commonly used by men as a polite particle after statements and questions."}
+    ]
+  },
+  {
+    "id": "friends",
+    "title": "Making Friends",
+    "description": "Use simple questions to ask where someone is from and what they like.",
+    "objectives": [
+      "Ask where someone is from.",
+      "Recognize a common phrase used when meeting someone."
+    ],
+    "vocabulary": [
+      {"thai":"มาจาก","romanization":"ma chak","meaning":"come from"},
+      {"thai":"ประเทศ","romanization":"prathet","meaning":"country"},
+      {"thai":"ชอบ","romanization":"chop","meaning":"to like"},
+      {"thai":"ยินดีที่ได้รู้จัก","romanization":"yindi thi dai ruchak","meaning":"nice to meet you"}
+    ],
+    "examples": [
+      {"thai":"คุณมาจากประเทศอะไร","romanization":"khun ma chak prathet arai","translation":"What country are you from?"},
+      {"thai":"ยินดีที่ได้รู้จักครับ","romanization":"yindi thi dai ruchak khrap","translation":"Nice to meet you. (ครับ is commonly used by men as a polite particle.)"}
+    ],
+    "quiz": [
+      {"question":"What does ชอบ mean?","choices":["To like","To go","To wait"],"answer":0,"explanation":"ชอบ (chop) means to like."},
+      {"question":"Which phrase means 'Nice to meet you'?","choices":["ไม่เป็นไร","ยินดีที่ได้รู้จัก","ตรงไป"],"answer":1,"explanation":"ยินดีที่ได้รู้จัก (yindi thi dai ruchak) means nice to meet you."}
+    ]
+  },
+  {
+    "id": "basic-conversations",
+    "title": "Basic Conversations",
+    "description": "Put common questions and answers together for a short exchange.",
+    "objectives": [
+      "Ask how someone is and give a simple positive response.",
+      "Return the question with “And you?”"
+    ],
+    "vocabulary": [
+      {"thai":"สบายดีไหม","romanization":"sabai di mai","meaning":"how are you?"},
+      {"thai":"สบายดี","romanization":"sabai di","meaning":"I'm well"},
+      {"thai":"วันนี้","romanization":"wan ni","meaning":"today"},
+      {"thai":"แล้วคุณล่ะ","romanization":"laeo khun la","meaning":"and you?"}
+    ],
+    "examples": [
+      {"thai":"สบายดีไหมครับ","romanization":"sabai di mai khrap","translation":"How are you? (ครับ is commonly used by men as a polite particle.)"},
+      {"thai":"สบายดีค่ะ แล้วคุณล่ะ","romanization":"sabai di kha laeo khun la","translation":"I’m well. And you? (ค่ะ is commonly used by women in statements.)"}
+    ],
+    "quiz": [
+      {"question":"What does สบายดีไหม mean?","choices":["How are you?","Where is it?","How much is it?"],"answer":0,"explanation":"สบายดีไหม (sabai di mai) asks how someone is."},
+      {"question":"What does แล้วคุณล่ะ mean?","choices":["Thank you","And you?","Not spicy"],"answer":1,"explanation":"แล้วคุณล่ะ (laeo khun la) means and you?"}
+    ]
+  }
+]
