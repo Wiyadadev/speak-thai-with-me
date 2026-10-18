@@ -2,7 +2,7 @@
   "use strict";
 
   window.SITE_CONFIG = Object.freeze({
-    teacherName: "",
+    teacherName: "Teacher Apple",
     teacherBiography: "",
     teachingApproach: "",
     contactEmail: "",

@@ -112,6 +112,11 @@ h3 { font-size: 1.18rem; }
 .benefit-icon { display: grid; width: 42px; height: 42px; flex: 0 0 42px; place-items: center; color: var(--coral-dark); background: #fffaf1; border-radius: 13px; font-weight: 700; }
 .benefit h3 { margin: 0 0 7px; font-size: 1rem; }
 .benefit p { max-width: 390px; margin: 0; color: var(--muted); font-size: .87rem; }
+.home-teacher-section { padding-block: 78px; background: #f1eee5; }
+.home-teacher-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 10%; align-items: center; }
+.home-teacher-photo { display: block; width: 100%; max-height: 430px; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 35%; border-radius: 20px; }
+.home-teacher-copy h2 { margin-bottom: 18px; }
+.about-teacher-photo { display: block; width: 100%; min-height: 390px; max-height: 520px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 32%; border-radius: 48% 48% 20px 20px; }
 .process-section { padding-bottom: 102px; }
 .heading-aside { max-width: 240px; margin-bottom: 8px; color: var(--muted); font-size: .91rem; }
 .steps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 21px; }
@@ -296,6 +301,8 @@ h3 { font-size: 1.18rem; }
   .preview-card { min-height: 237px; }
   .why-section, .faq-section { padding-block: 72px; }
   .why-grid, .faq-grid { grid-template-columns: 1fr; gap: 35px; }
+  .home-teacher-grid { grid-template-columns: 1fr; gap: 28px; }
+  .home-teacher-photo { max-height: 360px; }
   .benefit-list { gap: 20px; }
   .steps-grid article { min-height: auto; }
   .cta-band { align-items: flex-start; flex-direction: column; margin-block: 55px; padding: 35px 25px; }
@@ -327,7 +334,7 @@ h3 { font-size: 1.18rem; }
   .form-heading { align-items: flex-start; flex-direction: column; gap: 4px; }
   .booking-layout { padding-bottom: 65px; }
   .about-layout { grid-template-columns: 1fr; gap: 35px; padding-bottom: 65px; }
-  .teacher-placeholder { min-height: 300px; }
+  .about-teacher-photo { min-height: 300px; max-height: 430px; aspect-ratio: 4 / 3; }
   .about-values { margin-bottom: 55px; padding: 30px 23px; }
   .contact-grid { grid-template-columns: 1fr; padding-bottom: 20px; }
   .contact-card { min-height: auto; }
